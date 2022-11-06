@@ -15,8 +15,12 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
-        buildConfigField 'String', 'BASE_URL', "\"https://5e510330f2c0d300147c034c.mockapi.io/\""
+        buildConfigField 'String', 'BASE_URL', "\"https://raw.githubusercontent.com/VasiliB/MusicApp/master/app/src/main/res/raw/\""
 
+    }
+
+    buildFeatures {
+        viewBinding = true
     }
 
     buildTypes {

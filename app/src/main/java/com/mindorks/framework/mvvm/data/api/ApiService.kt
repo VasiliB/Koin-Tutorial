@@ -6,7 +6,7 @@ import retrofit2.http.GET
 
 interface ApiService {
 
-    @GET("users")
+    @GET("playlist.json")
     suspend fun getUsers(): Response<List<User>>
 
 }

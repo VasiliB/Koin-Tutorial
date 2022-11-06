@@ -15,10 +15,10 @@ class MainAdapter(
 
     class DataViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bind(user: User) {
-            itemView.textViewUserName.text = user.name
-            itemView.textViewUserEmail.text = user.email
+            itemView.textViewUserName.text = user.artist
+            itemView.textViewUserEmail.text = user.title
             Glide.with(itemView.imageViewAvatar.context)
-                .load(user.avatar)
+                .load(user.bitmapUri)
                 .into(itemView.imageViewAvatar)
         }
     }
